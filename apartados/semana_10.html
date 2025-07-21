@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Semana 10 – Cuaderno</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Semana 10</h1>
+    <nav>
+      <a href="index.html">Portada</a>
+      <a href="Sobre-mi.html">Sobre mí</a>
+      <a href="Proyectos.html">Proyectos</a>
+      <a href="Cuaderno.html" class="active">Cuaderno</a>
+      <a href="Reflexion_final.html">Reflexión</a>
+      <a href="Bibliografia.html">Bibliografía</a>
+    </nav>
+  </header>
+
+<main>
+  <section class="card">
+    <h2>Temas y actividades</h2>
+
+    <p><strong>Temas aprendidos:</strong></p>
+    <p>Creación de servicios RESTful usando Java Spring Boot, implementación de controladores, servicios, repositorios, entidades JPA y pruebas con herramientas como Postman.</p>
+
+    <p><strong>¿Qué es un servicio REST?</strong></p>
+    <p>Es un estilo arquitectónico que permite la comunicación entre sistemas mediante operaciones HTTP (GET, POST, PUT, DELETE). Spring Boot permite construir estas APIs fácilmente usando anotaciones como <code>@RestController</code> y <code>@RequestMapping</code>.</p>
+
+    <p><strong>Componentes principales en un backend con Spring:</strong></p>
+    <div style="margin-left: 1rem;">
+      <p><code>@RestController</code>: define clases que manejarán las peticiones HTTP.</p>
+      <p><code>@Service</code>: contiene la lógica de negocio que será reutilizada.</p>
+      <p><code>@Repository</code>: interactúa con la base de datos usando Spring Data JPA.</p>
+      <p><code>@Entity</code>: representa una tabla en la base de datos.</p>
+    </div>
+
+    <p><strong>Ejemplo práctico realizado:</strong></p>
+    <p>Se creó una API para gestionar productos. El modelo <code>Producto</code> tenía atributos como id, nombre y precio. A través del controlador, se implementaron rutas para listar, crear, actualizar y eliminar productos, usando una base de datos en memoria H2.</p>
+
+    <p><strong>Pruebas y herramientas usadas:</strong></p>
+    <div style="margin-left: 1rem;">
+      <p>— Postman para probar rutas HTTP.</p>
+      <p>— Swagger para documentar el API.</p>
+      <p>— Spring DevTools para recarga automática.</p>
+    </div>
+
+    <p><strong>Reflexión:</strong> Aprendí cómo estructurar un proyecto backend profesional usando buenas prácticas como separación por capas, inyección de dependencias y anotaciones de Spring. Esto es fundamental para construir APIs robustas, mantenibles y listas para producción.</p>
+  </section>
+</main>

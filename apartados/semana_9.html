@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Semana 9 – Cuaderno</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Semana 9</h1>
+    <nav>
+      <a href="index.html">Portada</a>
+      <a href="Sobre-mi.html">Sobre mí</a>
+      <a href="Proyectos.html">Proyectos</a>
+      <a href="Cuaderno.html" class="active">Cuaderno</a>
+      <a href="Reflexion_final.html">Reflexión</a>
+      <a href="Bibliografia.html">Bibliografía</a>
+    </nav>
+  </header>
+
+<main>
+  <section class="card">
+    <h2>Temas y actividades</h2>
+
+    <p><strong>Temas aprendidos:</strong></p>
+    <p>React, JSX, props, componentes funcionales, arquitectura de Front-End moderno y autenticación con tokens en backend usando Spring Boot.</p>
+
+    <p><strong>Resumen: Autenticación basada en tokens con Java Spring Boot</strong></p>
+    <p>
+      La autenticación basada en tokens (como JWT) permite validar al usuario sin mantener sesiones en el servidor. Spring Security se encarga de verificar credenciales y generar un token que se devuelve al cliente. En cada solicitud posterior, el cliente incluye ese token en los encabezados, y un filtro lo valida.
+    </p>
+
+    <p><strong>Flujo básico:</strong></p>
+    <div style="margin-left: 1rem;">
+      <p>— El usuario inicia sesión enviando usuario y contraseña.</p>
+      <p>— El backend verifica y genera un JWT firmado con datos del usuario.</p>
+      <p>— El cliente guarda el token y lo envía con cada solicitud.</p>
+      <p>— El backend valida el token antes de responder.</p>
+    </div>
+
+    <p><strong>Componentes clave:</strong></p>
+    <div style="margin-left: 1rem;">
+      <p><code>SecurityConfig</code>: configura reglas de acceso y filtros.</p>
+      <p><code>UserDetailsService</code>: carga usuarios desde la base de datos.</p>
+      <p><code>JwtUtil</code>: genera y valida los tokens JWT.</p>
+      <p><code>JwtFilter</code>: intercepta peticiones para verificar el token.</p>
+    </div>
+
+    <p><strong>Buenas prácticas:</strong></p>
+    <div style="margin-left: 1rem;">
+      <p>— Encriptar contraseñas con <code>BCrypt</code>.</p>
+      <p>— Usar expiración corta y Refresh Tokens.</p>
+      <p>— Proteger rutas con anotaciones como <code>@PreAuthorize</code>.</p>
+    </div>
+
+    <p><strong>Reflexión:</strong> Comprendí cómo implementar autenticación moderna en backend con Java. Este tipo de enfoque es esencial para aplicaciones web seguras, escalables y eficientes.</p>
+  </section>
+</main>
+
+
+  <footer>
+    <p>&copy; 2025 Juan Rusell</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Semana 14 – Cuaderno</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Semana 14</h1>
+    <nav>
+      <a href="index.html">Portada</a>
+      <a href="Sobre-mi.html">Sobre mí</a>
+      <a href="Proyectos.html">Proyectos</a>
+      <a href="Cuaderno.html" class="active">Cuaderno</a>
+      <a href="Reflexion_final.html">Reflexión</a>
+      <a href="Bibliografia.html">Bibliografía</a>
+    </nav>
+  </header>
+
+  <main>
+  <section class="card">
+    <h2>Temas y actividades</h2>
+
+    <p><strong>Temas aprendidos:</strong></p>
+    <p>Esta semana exploramos el framework Flask, una herramienta ligera pero poderosa para desarrollar aplicaciones web con Python, ideal para APIs RESTful y proyectos de rápida implementación.</p>
+
+    <p><strong>¿Qué es Flask?</strong></p>
+    <p>Flask es un microframework de Python que permite construir aplicaciones web de forma rápida y sencilla. A diferencia de frameworks más grandes, como Django, Flask no impone una estructura rígida, lo que brinda flexibilidad al desarrollador.</p>
+
+    <p><strong>Características principales:</strong></p>
+    <div style="margin-left: 1rem;">
+      <p>— Ligero y minimalista: solo lo esencial para empezar, pero extensible mediante extensiones.</p>
+      <p>— Soporte para rutas, peticiones y respuestas HTTP de forma sencilla.</p>
+      <p>— Integración fácil con bases de datos como SQLite, MySQL o PostgreSQL.</p>
+      <p>— Ideal para APIs RESTful y microservicios.</p>
+    </div>
+
+    <p><strong>Flujo de desarrollo básico:</strong></p>
+    <div style="margin-left: 1rem;">
+      <p>1. Crear un entorno virtual y activar.</p>
+      <p>2. Instalar Flask con <code>pip install flask</code>.</p>
+      <p>3. Crear un archivo <code>app.py</code> con el servidor básico y rutas.</p>
+      <p>4. Ejecutar con <code>flask run</code> y acceder desde el navegador.</p>
+      <p>5. Agregar lógica, formularios, bases de datos y renderización de plantillas.</p>
+    </div>
+
+    <p><strong>Ejemplo de código básico:</strong></p>
+    <pre><code>
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def inicio():
+    return "¡Hola desde Flask!"
+
+if __name__ == '__main__':
+    app.run(debug=True)
+    </code></pre>
+
+    <p><strong>Extensiones útiles:</strong></p>
+    <div style="margin-left: 1rem;">
+      <p>— Flask-SQLAlchemy: para trabajar con bases de datos relacionales.</p>
+      <p>— Flask-WTF: para manejar formularios y validaciones.</p>
+      <p>— Flask-Login: para autenticación de usuarios.</p>
+    </div>
+
+    <p><strong>Reflexión:</strong> Flask permite construir aplicaciones web modernas con una curva de aprendizaje accesible. Su simplicidad y flexibilidad lo convierten en una excelente opción para proyectos pequeños, APIs y prototipos, así como para desarrolladores que buscan tener mayor control del backend.</p>
+  </section>
+</main>

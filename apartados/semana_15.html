@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Semana 15 – Cuaderno</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Semana 15</h1>
+    <nav>
+      <a href="index.html">Portada</a>
+      <a href="Sobre-mi.html">Sobre mí</a>
+      <a href="Proyectos.html">Proyectos</a>
+      <a href="Cuaderno.html" class="active">Cuaderno</a>
+      <a href="Reflexion_final.html">Reflexión</a>
+      <a href="Bibliografia.html">Bibliografía</a>
+    </nav>
+  </header>
+
+  <main>
+  <section class="card">
+    <h2>Temas y actividades</h2>
+
+    <p><strong>Temas aprendidos:</strong></p>
+    <p>Esta semana se desarrolló un sistema inteligente básico utilizando Python, con enfoque en la inteligencia artificial aplicada a la toma de decisiones y análisis de datos.</p>
+
+    <p><strong>¿Qué es un sistema inteligente?</strong></p>
+    <p>Es un software capaz de razonar, aprender o actuar de manera autónoma en función de datos, reglas o comportamientos. Utiliza conceptos de IA como machine learning, lógica difusa, sistemas expertos, redes neuronales, entre otros.</p>
+
+    <p><strong>Enfoque del proyecto:</strong></p>
+    <p>Se desarrolló un sistema experto simple para asesoría médica básica (triage), capaz de dar recomendaciones según síntomas ingresados por el usuario.</p>
+
+    <p><strong>Flujo básico del sistema:</strong></p>
+    <div style="margin-left: 1rem;">
+      <p>1. El usuario ingresa sus síntomas (ej. fiebre, tos, dolor de garganta).</p>
+      <p>2. El sistema analiza los síntomas con reglas predefinidas.</p>
+      <p>3. Retorna una sugerencia (por ejemplo, "Podrías tener una gripe leve. Descansa e hidrátate.").</p>
+    </div>
+
+    <p><strong>Fragmento de código:</strong></p>
+    <pre><code>
+def diagnosticar(sintomas):
+    if "fiebre" in sintomas and "tos" in sintomas:
+        return "Posible gripe. Se recomienda reposo y abundante líquido."
+    elif "dolor de cabeza" in sintomas and "visión borrosa" in sintomas:
+        return "Consulta médica urgente recomendada."
+    else:
+        return "Síntomas no concluyentes. Visita un especialista."
+    </code></pre>
+
+    <p><strong>Bibliotecas utilizadas:</strong></p>
+    <div style="margin-left: 1rem;">
+      <p>— <code>tkinter</code>: para crear una interfaz gráfica básica.</p>
+      <p>— <code>pandas</code> y <code>numpy</code>: en caso se analicen datasets de salud.</p>
+      <p>— <code>sklearn</code>: si se desea aplicar un modelo de aprendizaje automático.</p>
+    </div>
+
+    <p><strong>Aplicaciones reales:</strong></p>
+    <ul>
+      <li>Chatbots inteligentes para atención al cliente.</li>
+      <li>Sistemas de diagnóstico médico preliminar.</li>
+      <li>Recomendadores de productos o servicios.</li>
+      <li>Asistentes personales y de productividad.</li>
+    </ul>
+
+    <p><strong>Reflexión:</strong> Aprendí cómo Python facilita la creación de sistemas inteligentes a pequeña escala. El uso de reglas y lógica para generar recomendaciones automáticas representa la base de la inteligencia artificial práctica que vemos a diario.</p>
+  </section>
+</main>

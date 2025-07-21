@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Semana 1 - Cuaderno</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Semana 1</h1>
+    <nav>
+      <a href="index.html">Portada</a>
+      <a href="Sobre-mi.html">Sobre mí</a>
+      <a href="Proyectos.html">Proyectos</a>
+      <a href="Cuaderno.html" class="active">Cuaderno</a>
+      <a href="Reflexion_final.html">Reflexión final</a>
+      <a href="Bibliografia.html">Bibliografía</a>
+    </nav>
+  </header>
+
+ <main>
+  <section class="card">
+    <h2>Resumen de aprendizajes</h2>
+
+    <p><strong>Temas aprendidos:</strong> Emmet es una herramienta para escribir código HTML y CSS rápidamente usando abreviaciones.</p>
+
+    <p>Emmet es un plugin que existe para la mayoría de los editores de texto comunes, pensado para mejorar el flujo de trabajo. Este plugin está disponible de forma predeterminada en VS Code y facilita la generación de código HTML y la apertura de etiquetas.</p>
+
+    <p><strong>Ejercicios de laboratorio:</strong> Combinaciones como <code>div&gt;header+main+footer</code>, listas con clases, etc.</p>
+
+    <p><strong>Ejemplo práctico:</strong><br>
+    Escribir el generador Emmet para una estructura HTML semántica con IDs del mismo nombre y contenido de texto, agrupados en un contenedor:</p>
+
+    <div style="text-align:center; margin: 1rem 0;">
+      <img src="imagenes/img1.png" alt="Ejemplo Semana 1" style="max-width:100%; width:400px; border-radius:10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    </div>
+
+    <p>El resultado del generador Emmet fue:</p>
+    <p><code>div.container&gt;header#header{header}+nav#nav{nav}+section#section{section&gt;article#article{article}^}+aside#aside{aside}+footer#footer{footer}</code></p>
+
+    <p><strong>Reflexión:</strong> Aprendí cómo mejorar mi velocidad al crear estructuras HTML usando Emmet. Las abreviaciones me permiten generar mucho código en menos tiempo, lo cual es muy útil para proyectos web.</p>
+  </section>
+</main>

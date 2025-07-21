@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Semana 11 – Cuaderno</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Semana 11</h1>
+    <nav>
+      <a href="index.html">Portada</a>
+      <a href="Sobre-mi.html">Sobre mí</a>
+      <a href="Proyectos.html">Proyectos</a>
+      <a href="Cuaderno.html" class="active">Cuaderno</a>
+      <a href="Reflexion_final.html">Reflexión</a>
+      <a href="Bibliografia.html">Bibliografía</a>
+    </nav>
+  </header>
+
+  <main>
+  <section class="card">
+    <h2>Temas y actividades</h2>
+
+    <p><strong>Temas aprendidos:</strong></p>
+    <p>Uso de JSP (Jakarta Server Pages) como motor de vistas en aplicaciones Java, integrándolo con Spring MVC para construir interfaces web dinámicas.</p>
+
+    <p><strong>¿Qué es JSP?</strong></p>
+    <p>Es una tecnología de Java que permite generar contenido HTML de forma dinámica. Permite incluir lógica Java dentro de páginas web usando etiquetas especiales como <code>&lt;% %&gt;</code> y expresiones como <code>${}</code> a través de JSTL (Jakarta Standard Tag Library).</p>
+
+    <p><strong>¿Cómo se integra JSP con Spring?</strong></p>
+    <p>Spring MVC utiliza controladores para enviar datos a las vistas JSP. Estas vistas se ubican en la carpeta <code>/WEB-INF/views/</code> y el archivo de configuración indica qué motor de vista se usará (como InternalResourceViewResolver).</p>
+
+    <p><strong>Flujo típico de una app con Spring + JSP:</strong></p>
+    <div style="margin-left: 1rem;">
+      <p>1. Un controlador <code>@Controller</code> recibe la petición HTTP.</p>
+      <p>2. El controlador retorna el nombre de una vista (por ejemplo, "home").</p>
+      <p>3. Spring busca el archivo JSP correspondiente, como <code>/WEB-INF/views/home.jsp</code>.</p>
+      <p>4. JSP renderiza el contenido dinámico usando variables del modelo.</p>
+    </div>
+
+    <p><strong>Ejemplo práctico realizado:</strong></p>
+    <p>Se implementó una página de bienvenida con JSP que muestra el nombre del usuario obtenido desde el backend. Se utilizó un controlador con <code>Model.addAttribute()</code> para pasar el valor, y JSP lo mostró con <code>${nombre}</code>.</p>
+
+    <p><strong>Buenas prácticas:</strong></p>
+    <div style="margin-left: 1rem;">
+      <p>— Usar JSTL en lugar de código Java embebido para mantener claridad.</p>
+      <p>— Separar lógica del backend y presentación para mantener el patrón MVC.</p>
+      <p>— Definir rutas amigables en controladores Spring.</p>
+    </div>
+
+    <p><strong>Reflexión:</strong> Comprendí cómo usar JSP como motor de plantillas en aplicaciones Spring. Aunque actualmente hay motores más modernos como Thymeleaf, el uso de JSP sigue siendo útil para comprender el flujo entre controlador y vista en una arquitectura MVC.</p>
+  </section>
+</main>

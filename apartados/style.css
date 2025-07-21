@@ -1,0 +1,208 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Sticky Footer */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafb;
+  color: #2c3e50;
+  line-height: 1.7;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+/* === Header y Nav === */
+header {
+  background-color: #005f73;
+  color: white;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+}
+
+/* === Main & Cards === */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #005f73;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #0a9396;
+}
+
+.card p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+/* === Botones (Cuaderno) === */
+.consolidados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.columna {
+  flex: 1;
+  min-width: 260px;
+  max-width: 400px;
+}
+
+.columna h3 {
+  margin-bottom: 1rem;
+  color: #005f5f;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.boton-semana {
+  display: block;
+  background-color: #0a9396;
+  color: white;
+  padding: 0.8rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+
+/* === Lista Bibliografía === */
+.biblio-lista {
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  list-style-type: disc;
+}
+
+.biblio-lista li a {
+  color: #005f73;
+  text-decoration: none;
+}
+
+.biblio-lista li a:hover {
+  text-decoration: underline;
+}
+
+/* === Footer === */
+footer {
+  background-color: #005f73;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.95rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* === Portada con Imagen Circular === */
+.portada-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contenido-portada {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.texto-portada {
+  flex: 1 1 55%;
+}
+
+.imagen-portada {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-portada img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contenido-portada {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .texto-portada {
+    flex: 1 1 100%;
+  }
+
+  .imagen-portada {
+    flex: 1 1 100%;
+  }
+}
